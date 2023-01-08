@@ -1,9 +1,0 @@
-function rangeOfNumbers(startNum, endNum) {
-  if (endNum < startNum) {
-    return [];
-  } else {
-    const arr100 = rangeOfNumbers(startNum, endNum - 1);
-    arr100.push(endNum);
-    return arr100;
-  }
-}
