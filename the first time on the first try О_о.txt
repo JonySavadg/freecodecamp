@@ -1,0 +1,9 @@
+function mutation(arr) {
+  for (let i = 0; i < arr[1].length; i++) {
+    let testLetters = new RegExp(arr[1][i], 'ig');
+    if (!testLetters.test(arr[0])) return false;
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
